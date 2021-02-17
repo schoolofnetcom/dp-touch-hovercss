@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .btn {
+            background-color: red;
+        }
+
+        .btn:hover {
+            background-color: aqua;
+        }
+
+        .btn:active {
+            background-color: blueviolet;
+        } */
+
+        @media(hover: hover) {
+            .btn {
+                background-color: red;
+            }
+        }
+        
+        @media(hover: none) {
+            .btn {
+                background-color: yellow;
+            }
+        }
+
+        @media(hover: none) and (pointer: coarse) {
+
+        }
+
+        @media(hover: none) and (pointer: fine) {
+
+        }
+
+        @media(hover: hover) and (pointer: fine) {
+
+        }     
+
+        @media(hover: hover) and (pointer: coarse)  {
+
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn">Click to link</a>
+
+    <script>
+        window.matchMedia('(hover: hover)').matches; //true | false
+    </script>
+</body>
+</html>
